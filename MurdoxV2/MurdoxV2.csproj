@@ -15,4 +15,15 @@
     <PackageReference Include="DSharpPlus.VoiceNext" Version="5.0.0-nightly-01915" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MurdoxV2.Common\MurdoxV2.Common.csproj" />
+    <ProjectReference Include="..\MurdoxV2.Data\MurdoxV2.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="secrets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

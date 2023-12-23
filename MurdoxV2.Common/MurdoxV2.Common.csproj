@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MurdoxV2.Data\MurdoxV2.Data.csproj" />
+  </ItemGroup>
+
 </Project>
