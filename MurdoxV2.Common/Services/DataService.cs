@@ -11,6 +11,13 @@ namespace MurdoxV2.Common.Services
 {
     public class DataService : IDataService
     {
+        public string[] GetApplicationPrefix()
+        {
+            var jsonFile = File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Configuration", "config.json"));
+            var json = JsonSerializer.Deserialize<ConfigJson?>(jsonFile);
+            return json!.Prefix;
+        }
+
         public string GetBotToken()
         {
             var jsonFile = File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "secrets.json"));

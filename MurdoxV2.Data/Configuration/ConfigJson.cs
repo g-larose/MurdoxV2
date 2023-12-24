@@ -11,5 +11,6 @@ namespace MurdoxV2.Data.Configuration
     {
         public string? Token { get; set; }
         public string? ConnectionString { get; set; }
+        public string[]? Prefix { get; set; }
     }
 }

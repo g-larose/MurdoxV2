@@ -9,6 +9,7 @@ namespace MurdoxV2.Common.Interfaces
     public interface IDataService
     {
         string GetBotToken();
+        string[] GetApplicationPrefix();
         string GetConnectionString();
         Task<T> LoadJsonAsync<T>(string path);
     }
